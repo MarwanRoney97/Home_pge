@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { NavLink } from 'react-router-dom';
+import { BiLogIn} from "react-icons/bi";
+import img from "./image/a.png";
 
 export default function navbar() {
     return (
@@ -14,10 +16,9 @@ export default function navbar() {
             <button className="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 ☰
             </button>
-
         <div className="offcanvas offcanvas-start  " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
            
-        <div className="offcanvas-body  vw-25 btn btn-light  ">
+        <div className="offcanvas-body  vw-1 btn btn-light  ">
 
         <div className="dropdown mt-3 ">
             <button className="btn btn-success w-75 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
@@ -40,14 +41,26 @@ export default function navbar() {
         
         </div>
         </div>
+        
+
+
+        <span className="ml-3">
+          <img src={img} class="rounded "width="70"/>
+        </span>  
     </div>
-    <a className="navbar-brand" href="#">Navbar</a>
+     
+
+    <div>
+           
+
+    </div>
+    
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
 
     <div className="button_4 ">
-        <button className="button d-flex justify-content-end btn btn-success">Logout</button>
+        <button className="button d-flex justify-content-end btn btn-light btn btn-outline-danger"><BiLogIn/></button>
         </div>
 
                 
